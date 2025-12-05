@@ -1,0 +1,88 @@
+// Container takes up the full screen height
+:host {
+  display: block; // Ensures the host element behaves like a block for height to work
+  height: 100vh;
+  margin: 0;
+  
+  /* LOGIN BACKGROUND IMAGE */
+  background: url('/assets/login.jpg') no-repeat center center fixed;
+  background-size: cover;
+  
+  // Center the content
+  display: flex;
+  justify-content: center; // Horizontal Center
+  align-items: center;     // Vertical Center
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px; // Keeps it from getting too wide
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); // Soft shadow for "pop" effect
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+    // Uses your requested font, with fallbacks
+    font-family: 'Berlin Sans FB Demi', 'Berlin Sans FB', sans-serif;
+  }
+
+  .form-group {
+    margin-bottom: 1.25rem;
+    text-align: left;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #666;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box; // Ensures padding doesn't break width
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: #2a5298;
+        outline: none;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #28a745; // Green for "Energy" theme
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+
+    &:hover {
+      background: #218838;
+    }
+  }
+
+  .error {
+    margin-top: 15px;
+    color: #d9534f;
+    font-size: 0.9rem;
+    background: #ffe6e6;
+    padding: 10px;
+    border-radius: 4px;
+  }
+}

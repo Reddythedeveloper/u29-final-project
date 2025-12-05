@@ -1,0 +1,37 @@
+.chart-container {
+  padding: 2rem;
+  text-align: center;
+  max-width: 800px; /* Limit overall width */
+  margin: 0 auto;
+
+  h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8); /* Makes text readable on image */
+  }
+  
+  /* NEW STYLING FOR THE CHART BOX */
+  #chart1 {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    
+    /* Box Styling */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Drop shadow for depth */
+    width: fit-content; /* Only take up necessary space */
+  }
+
+  .chart-desc {
+    max-width: 600px;
+    margin: 20px auto 0; /* Added top margin for spacing from chart */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: left;
+    line-height: 1.6;
+  }
+}

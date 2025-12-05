@@ -1,0 +1,39 @@
+.reports-layout {
+  padding: 2rem;
+  min-height: 90vh; /* Fill the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    h2 { font-size: 2rem; color: #333; }
+  }
+
+  .chart-wrapper {
+    width: 90%;
+    max-width: 1200px; /* Limit max width but keep it wide */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+
+    /* Make SVG fill this wrapper */
+    ::ng-deep svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .info-panel {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #17a2b8;
+  }
+}

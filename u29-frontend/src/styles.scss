@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Berlin Sans FB Demi', 'Berlin Sans FB', sans-serif;
+  
+  /* WCAG FIX: Larger base font size for readability */
+  font-size: 18px;
+  line-height: 1.6;
+  
+  /* WCAG FIX: Darker text color (near black) for maximum contrast on white */
+  color: #222222; 
+  
+  background: url('/assets/main.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* WCAG FIX: Ensure standard text elements inherit the darker color */
+p, li, span, a, input, button, h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
+
+/* WCAG FIX: Clear visual focus indicator for keyboard navigation */
+:focus-visible {
+    outline: 3px solid #0056b3; /* Strong blue outline */
+    outline-offset: 2px;
+}
+
+app-root {
+  display: block;
+  height: 100%;
+}

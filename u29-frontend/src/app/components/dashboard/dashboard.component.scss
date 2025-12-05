@@ -1,0 +1,46 @@
+.content-container {
+  padding: 2rem;
+  width: 90%;
+  max-width: 1000px; /* Limits width so it looks good on big screens */
+  margin: 0 auto;    /* Centers the whole container on the page */
+  
+  // Vertical Layout
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  gap: 30px;           /* Space between title, summary, and tech card */
+
+  h1 { 
+    text-align: center; 
+    color: #333; 
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    // Uses your custom font
+    font-family: 'Berlin Sans FB Demi', 'Berlin Sans FB', sans-serif;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;       /* fill the container width */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    font-size: 1.0rem;
+
+    h3 { 
+      border-bottom: 2px solid #007bff; 
+      padding-bottom: 15px; 
+      margin-bottom: 20px; 
+      display: inline-block;
+      font-size: 1.4rem;
+    }
+    
+    // Tech Card Styling (Green Border)
+    &.tech-card { 
+      background: rgba(255, 255, 255, 0.9); 
+      border-top: 5px solid #28a745; 
+      border-left: none; 
+    }
+  }
+}
